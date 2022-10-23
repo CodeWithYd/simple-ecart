@@ -8,7 +8,7 @@ import { Router } from "@reach/router";
 //Pages
 import Home from './Pages/Home';
 import Cart from './Pages/Cart';
-
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   const [theme] = useThemeHook();
@@ -17,6 +17,7 @@ function App() {
       <Header/>
       <Router>
         <Home path="/" />
+        <ProductDetails path="product-details/:productId"/>
         <Cart path="/cart" />
       </Router>
     </main>
