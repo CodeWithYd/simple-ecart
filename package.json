@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-filter-search": "^1.1.11",
     "react-icons": "^4.4.0",
+    "react-lightbox-component": "^1.2.1",
     "react-scripts": "5.0.1",
     "react-use-cart": "^1.13.0",
     "web-vitals": "^2.1.4"
