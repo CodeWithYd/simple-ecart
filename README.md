@@ -1,7 +1,9 @@
-# Watch full video
-
+# Watch tutorial videos
+# PART-1
 [![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=55_EIL59sIU)](https://youtu.be/55_EIL59sIU "Code With Yd")
 
+# PART-2
+[![Everything Is AWESOME](https://yt-embed.herokuapp.com/embed?v=XdZmhHNS0_Y)](https://youtu.be/XdZmhHNS0_Y "Code With Yd")
 
 # Getting Started with Create React App
 
