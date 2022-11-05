@@ -35,6 +35,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              <Link to="sign-in" className={`nav-link ${darkMode? 'text-dark-primary' : 'text-light-primary'}`}>
+                Sign in
+              </Link>
               <Nav.Link 
                 className={darkMode? 'text-dark-primary': 'text-light-primary'}
                 onClick={()=>setDarkMode(!darkMode)}
