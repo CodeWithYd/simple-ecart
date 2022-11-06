@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { ThemeContext } from '../GlobalComponents/ThemeProvider';
 import { BiSun, BiMoon, BiCart} from 'react-icons/bi';
+import { VscAccount } from 'react-icons/vsc';
 import { Link } from "@reach/router";
 import { useCart } from "react-use-cart";
 
@@ -50,7 +51,11 @@ const Header = () => {
               >
                 <BiCart size="2rem"/>
                 {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
-                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>Cart</span>
+                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Cart</span>
+              </Link>
+              <Link to="my-account" className={`nav-link ${darkMode? 'text-dark-primary': 'text-light-primary'}`}>
+                  <VscAccount size="1.8rem"/>
+                  &nbsp;My Account
               </Link>
             </Nav>
           </Navbar.Collapse>
