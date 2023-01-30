@@ -30,7 +30,7 @@ const Header = () => {
         <Container>
           <Link to="/">
             <Navbar.Brand className={darkMode? 'text-dark-primary': 'text-light-primary'}>
-                <b>Simple-ecart</b>
+                <b>ByteQuest</b>
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -51,11 +51,11 @@ const Header = () => {
               >
                 <BiCart size="2rem"/>
                 {!isEmpty && <span style={{ position: 'relative', left: '-21px', top: '-18px'}}>{totalItems}</span>}
-                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;Cart</span>
+                <span style={{ marginLeft: !isEmpty ? '-13px': 0}}>&nbsp;</span>
               </Link>
               <Link to="my-account" className={`nav-link ${darkMode? 'text-dark-primary': 'text-light-primary'}`}>
                   <VscAccount size="1.8rem"/>
-                  &nbsp;My Account
+                  &nbsp;
               </Link>
             </Nav>
           </Navbar.Collapse>
