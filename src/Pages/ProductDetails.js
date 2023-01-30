@@ -46,6 +46,31 @@ const ProductDetails = (props) => {
                                 src: productData.image,
                                 title: productData.title,
                                 description: 'img 4'
+                            },
+                            {
+                                src: productData.image,
+                                title: productData.title,
+                                description: 'img 5'
+                            }, {
+                                src: productData.image,
+                                title: productData.title,
+                                description: 'img 6'
+                            }, {
+                                src: productData.image,
+                                title: productData.title,
+                                description: 'img 7'
+                            }, {
+                                src: productData.image,
+                                title: productData.title,
+                                description: 'img 8'
+                            }, {
+                                src: productData.image,
+                                title: productData.title,
+                                description: 'img 9'
+                            }, {
+                                src: productData.image,
+                                title: productData.title,
+                                description: 'img 4'
                             }
                         ]}
                   />
@@ -55,7 +80,7 @@ const ProductDetails = (props) => {
                     <Button 
                         onClick={()=>addItem(productData)}
                         className={theme? 'bg-dark-primary text-black' : 'bg-light-primary'}
-                        style={{borderRadius: '0', border: 0}}
+                        style={{borderRadius: '0', border: '0'}}
                     >
                         <BsCartPlus size="1.8rem"/>
                         Add to cart
@@ -64,11 +89,12 @@ const ProductDetails = (props) => {
                     <b className={`${theme? 'text-dark-primary' : 'text-light-primary'} h4 mt-3 d-block`}>
                         Rs. {productData.price}
                     </b>
-                    <br/>
-                    <b className="h5">4.1 ⭐</b>
+                    <p className="h3">4.1 ⭐</p>
                     <p className="mt-3 h5" style={{opacity: '0.8', fontWeight: '400'}}>
                         {productData.description}
                     </p>
+                    <br/>
+
                 </Col>
             </Row>
         </Container>

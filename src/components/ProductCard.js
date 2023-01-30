@@ -4,6 +4,7 @@ import { useThemeHook } from '../GlobalComponents/ThemeProvider';
 import { useCart } from 'react-use-cart';
 import { BsCartPlus } from 'react-icons/bs';
 import { Link } from  "@reach/router";
+// import { BiStrikethrough } from 'react-icons/bi';
 
 const ProductCard = (props) => {
     let { image, price, title, id} = props.data;
@@ -30,16 +31,22 @@ const ProductCard = (props) => {
                 <Card.Title style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap'}}>
                     {title}
                 </Card.Title>
-                <Card.Title>
-                    Rs. <span className="h3">{price}</span>
-                </Card.Title>
+              <div style={{padding:'8px 8px', display:'flex', marginBottom:'-15px',justifyContent:'space-between'}}className='add-cart'>
                 <Button
                     onClick={()=> addToCart()}
                     className={`${theme? 'bg-dark-primary text-black':'bg-light-primary' } d-flex align-item-center m-auto border-0`}
                 >
-                    <BsCartPlus size="1.8rem" />
-                    Add to cart
+                    <BsCartPlus size="2rem" />
+                   
                 </Button>
+                <Card.Title>
+                   &nbsp; Rs. <span className="h5" style={{color:'green'}}><strike>{(Math.floor(price/10))+12}</strike></span>
+                </Card.Title>
+                <Card.Title>
+                &nbsp; Rs. <span className="h3">{Math.floor(price)+100}</span>
+                </Card.Title>
+               
+                </div>
             </Card.Body>
         </Card>
     );

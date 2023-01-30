@@ -1,15 +1,15 @@
 /* theme dark */
 .bg-black{
-  background-color: black;
+  background-color: rgb(34, 30, 30);
 }
 .bg-light-black{
-  background-color: #262626 !important;
+  background-color: #282424 !important;
 }
 .text-black{
-  color: black;
+  color: rgb(58, 56, 56);
 }
 .text-light-black{
-  color: #262626;
+  color: #5b5656;
 }
 .bg-dark-primary{
   background-color: #fcbc73 !important;
@@ -35,4 +35,14 @@
 
 .react-tel-input input{
   width: 100% !important;
+}
+
+.footer{
+  background-color: rgb(62, 42, 109);
+  padding:14px;
+  color:rgb(233, 8, 8);
+  text-align: center;
+  
+  
+
 }
