@@ -30,7 +30,7 @@ const MyAccount = () => {
                            </Col> 
                            <Col xs={9} className="pt-1">
                                 <span>Hello,</span>
-                                <h4>Code With yd</h4>
+                                <h4>Priyansu</h4>
                            </Col>
                         </Row>
                         <Nav variant="pills" className="flex-column">
